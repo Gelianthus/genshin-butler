@@ -4,7 +4,7 @@ import ServiceList from "./ServiceList";
 
 function Main() {
 	return (
-		<main className="flex-grow p-4 sm:p-8 lg:p-16 bg-teal-300">
+		<main className="p-4 sm:p-8 lg:p-16 bg-teal-300">
 			<div className="my-8">
 				<h1
 					className={`${rowdies.className} text-4xl font-bold text-center mb-4`}

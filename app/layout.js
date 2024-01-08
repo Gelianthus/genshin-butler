@@ -10,8 +10,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>{children}</body>
+		<html
+			lang="en"
+			className="box-border"
+		>
+			<head>
+				<link
+					href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+					rel="stylesheet"
+				/>
+			</head>
+			<body className={inter.className}>
+				<div className="flex flex-col min-h-screen">
+					{children}
+					<footer className="text-center text-4xl font-bold p-4 bg-black text-white">
+						FOOTER PLACEHOLDER
+					</footer>
+				</div>
+			</body>
 		</html>
 	);
 }

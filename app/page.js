@@ -1,9 +1,12 @@
 import Main from "@/components/Main";
-import Image from "next/image";
+import MobileMenu from "@/components/MobileMenu";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
 	return (
-		<div className="flex flex-col">
+		<div className="flex-grow flex flex-row">
+			<Sidebar />
+			<MobileMenu />
 			<Main />
 		</div>
 	);
