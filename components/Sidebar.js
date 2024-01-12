@@ -1,13 +1,14 @@
 import Link from "next/link";
+import { rowdies } from "@/lib/fonts";
 
 function Sidebar() {
 	return (
 		<div className="hidden sm:block sm:w-[32rem]">
 			<nav>
-				<ul className="p-4">
+				<ul className={`${rowdies.className} p-4`}>
 					<li>
 						<Link
-							className="block p-2"
+							className="block p-2  hover:text-teal-600 active:text-teal-800"
 							href={""}
 						>
 							Characters
@@ -15,7 +16,7 @@ function Sidebar() {
 					</li>
 					<li>
 						<Link
-							className="block p-2"
+							className="block p-2  hover:text-teal-600 active:text-teal-800"
 							href={""}
 						>
 							Pricing
@@ -23,7 +24,7 @@ function Sidebar() {
 					</li>
 					<li>
 						<Link
-							className="block p-2"
+							className="block p-2  hover:text-teal-600 active:text-teal-800"
 							href={"/game-vocabulary"}
 						>
 							Game Vocabulary
@@ -31,7 +32,7 @@ function Sidebar() {
 					</li>
 					<li>
 						<Link
-							className="block p-2"
+							className="block p-2  hover:text-teal-600 active:text-teal-800"
 							href={"/about"}
 						>
 							About
@@ -39,7 +40,7 @@ function Sidebar() {
 					</li>
 					<li>
 						<Link
-							className="block p-2"
+							className="block p-2  hover:text-teal-600 active:text-teal-800"
 							href={"/terms-and-conditions"}
 						>
 							Terms and Conditions
@@ -47,7 +48,7 @@ function Sidebar() {
 					</li>
 					<li>
 						<Link
-							className="block p-2"
+							className="block p-2  hover:text-teal-600 active:text-teal-800"
 							href={"/privacy"}
 						>
 							Privacy

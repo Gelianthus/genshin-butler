@@ -1,4 +1,5 @@
 import { rowdies } from "@/lib/fonts";
+import Image from "next/image";
 
 function ServiceList() {
 	return (
@@ -12,6 +13,7 @@ function ServiceList() {
 					given access to my world to collect materials while yours is in the
 					process of respawning. Includes all Minerals and Local Specialties.
 				</p>
+				<div></div>
 			</li>
 			<li className="my-12">
 				<h2 className={`${rowdies.className} mb-4 font-semibold text-cyan-950`}>
